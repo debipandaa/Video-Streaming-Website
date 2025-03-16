@@ -1,0 +1,113 @@
+.movie-card {
+  display: flex;
+  flex-direction: column;
+  overflow-y: scroll;
+  gap: 1rem;
+  max-width: 25rem;
+  padding: 10px;
+  margin: 10px;
+}
+
+.movie-header {
+  display: flex;
+  gap: 2%;
+}
+
+.movie-poster {
+  flex: 0 0 30%;
+  width: 100%;
+  height: auto;
+  border-radius: 0.8rem;
+}
+
+.movie-header-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.movie-title {
+  font-size: 1.5rem;
+  margin: 0;
+  font-weight: bold;
+}
+
+.movie-rating {
+  font-size: 1.2rem;
+  margin: 0.2rem 0;
+}
+
+.movie-status,
+.movie-production,
+.movie-aired {
+  font-size: 1rem;
+  margin: 0.2rem 0;
+}
+
+.movie-plot {
+  margin: 1rem 0;
+  font-size: 1.1rem;
+  line-height: 1.5;
+}
+
+.movie-genres {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1%;
+}
+
+.movie-genre-tag {
+  background-color: #333;
+  padding: 0.5em 1em;
+  border-radius: 0.5rem;
+  font-size: 0.9rem;
+}
+
+.movie-characters-title {
+  font-size: 1.3rem;
+  margin: 0.5rem 0;
+}
+
+.movie-characters {
+  display: flex;
+  flex-direction: column;
+  overflow-y: scroll;
+  gap: 1rem;
+}
+
+.movie-character {
+  background-color: #2e2e2e;
+  padding: 1em;
+  border-radius: 0.5rem;
+  text-align: center;
+}
+
+.character-name {
+  font-size: 1rem;
+  margin: 0 0 0.5rem;
+}
+
+.actor-name {
+  font-size: 0.9rem;
+  color: #ccc;
+  margin: 0;
+}
+
+.close-button {
+  display: flex;
+  justify-content: end;
+}
+.close-button img {
+  width: 2rem;
+  height: 2rem;
+}
+
+.button-watch {
+  background-color: white;
+  color: black;
+  text-align: center;
+  padding: 0.5rem 0;
+  cursor: pointer;
+  border-radius: 20px;
+}

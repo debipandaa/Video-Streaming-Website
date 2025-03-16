@@ -1,0 +1,34 @@
+.search-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+.search-container > div {
+  background-color: pink;
+  /* padding: 20px; */
+  height: 2.5rem;
+  border-radius: 8px;
+  width: 300px;
+  display: flex;
+  align-items: center;
+  padding-left: 10px;
+}
+
+.search-container input {
+  background-color: transparent;
+  border: none;
+  height: 100%;
+  width: 90%;
+  font-size: 1.25rem;
+  margin-left: 10px;
+}
+.search-container input:focus {
+  outline: none;
+}

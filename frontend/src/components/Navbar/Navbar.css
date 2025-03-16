@@ -1,0 +1,51 @@
+.MenuBox {
+  background-color: #121212;
+  border-radius: 10px;
+  height: 100%;
+  width: 3rem;
+}
+
+.MenuBox > ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+  list-style: none;
+}
+.MenuBox > ul > li {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.MenuBox > ul > li {
+  position: relative;
+  cursor: pointer;
+}
+
+.MenuBox > ul > li > span {
+  position: absolute;
+  opacity: 0;
+  margin-left: 40px;
+  color: black;
+  background: #fff;
+  transition: 250ms ease all;
+  border-radius: 17.5px;
+  padding: 8px 12px;
+  white-space: nowrap;
+
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  z-index: 1;
+}
+
+.MenuBox > ul > li:hover span {
+  opacity: 1;
+}
+.MenuBox > ul > li > svg {
+  transition: color 0.3s ease;
+}
+
+.MenuBox > ul > li > svg:active {
+  color: #ff69b4;
+}

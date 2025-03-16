@@ -1,0 +1,93 @@
+.carousel-wrapper {
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  gap: 20px;
+  padding: 20px;
+  width: 100%;
+  height: 100%;
+}
+
+.background-image {
+  flex: 0 0 100%;
+  scroll-snap-align: center;
+  border-radius: 40px;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.background-image-blur {
+  backdrop-filter: blur(64px);
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent overlay */
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.carousel-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  z-index: 2; /* Content sits above the blur */
+  padding: 20px;
+  /* border-radius: 40px; */
+}
+
+.carousel-card-content {
+  color: #fff;
+  max-width: 60%;
+}
+
+.carousel-card-title {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.carousel-card-overview {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.carousel-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.carousel-button {
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.carousel-button.watch-now {
+  background-color: #ff4b2b;
+  color: #fff;
+  border: none;
+}
+
+.carousel-button.add {
+  background-color: transparent;
+  color: #ff4b2b;
+  border: 1px solid #ff4b2b;
+}
+
+.carousel-image {
+  max-width: 20rem;
+}
+
+.carousel-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  transform: rotateY(-10deg) rotateX(5deg);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s;
+}
